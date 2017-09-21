@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="item"
+            type="codemakers.twoviewholders.model.Item2"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:padding="30dp"
+            android:background="#33b5e5"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@{item.content}"
+            />
+
+
+    </LinearLayout>
+</layout>
